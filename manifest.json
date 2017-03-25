@@ -1,0 +1,40 @@
+{
+	"manifest_version": 2,
+	"name": "FurAffinity Thumbnail Enhancer",
+	"description": "Replaces FurAffinity thumbnails with the original images quickly and efficiently.",
+	"version": "0.1",
+	"icons": {
+		"16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+		"default_icon": {
+			"16": "images/icon16.png",
+	        "48": "images/icon48.png",
+	        "128": "images/icon128.png"
+	    },
+	    "default_title": "FurAffinity Thumbnail Enhancer"
+    },
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.furaffinity.net/msg/submissions",
+				"https://www.furaffinity.net/msg/submissions/*",
+				"https://www.furaffinity.net/gallery/*",
+				"https://www.furaffinity.net/scraps/*",
+				"https://www.furaffinity.net/favorites/*",
+				"https://www.furaffinity.net/browse",
+				"https://www.furaffinity.net/search",
+				"https://www.furaffinity.net/browse/*",
+				"https://www.furaffinity.net/search/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"css": [
+				"content.css"
+			]
+		}
+	]
+}

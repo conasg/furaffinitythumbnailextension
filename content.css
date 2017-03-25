@@ -1,0 +1,11 @@
+figure.t-image {
+    max-height: none !important;
+    height: auto !important;
+}
+figure.t-image > b {
+    height: auto !important;
+}
+figure.t-image > b > u > a > img {
+    max-width: 100% !important;
+    height: auto !important;
+}
